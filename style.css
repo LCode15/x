@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wishlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.item a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    background-color: #333;
+}
+
+@media (max-width: 600px) {
+    .wishlist {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
